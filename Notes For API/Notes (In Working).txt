@@ -1,0 +1,28 @@
+API by Craig a developer 
+How the web works :
+All browsers are net clients when we open a browser and search for anything 
+
+
+we send a request over the server which uses HTTPS (hyper text transfer protocol) 
+
+this request goes with a https protocol that is attached an other thing which is get get is used in request 
+
+to tell this client does not want to make any changes and another thing is that https is stateless
+
+ which means that no track is left when the response comes.
+
+if you want to login or something the https protocol uses the post post tells the server this client will make changes next thing is the url (universal resource locater)
+
+ the resource is a object in programming terms ever wonder what is after the question mark this is the information that you want there are other ways to get i
+
+nformation too like headers everything that you send has headers in old days it was completly kos and no one was liked one style until the rest way of api came
+
+ this became so popular that after some time many api's were offerd all over the internet but the rest api has some limitaions api methods are still advancing like ther 
+
+is many ways for example graphic ql api bassically abstracts many stuff for us programmers to worry about api s help to communicate with resources and itract
+
+ with them both response and request have headers y headers u can ex[plain that what is wanted leke why you want the whole page if you have it localy just get the updated sides of 
+
+the web this teqnice alows caching http has someting called crud 
+
+which means create read update delete which in http is get post put and delete rezt mean repasitional state tranfer and when it get tho the web it sends java script object notaion

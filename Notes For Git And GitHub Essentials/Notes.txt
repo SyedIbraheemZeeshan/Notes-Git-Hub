@@ -1,0 +1,228 @@
+GIT AND GIT HUB
+
+GIT HUB is a remote server that you can use for  pushing your program and pulling other people's commands and even working on the same database with others. One of the main features of this is that your program remains safe so if your computer ever crashes git hub still has your command. There are also more remote servers like paperbucket but git is best.
+
+GIT IS ESSENTIAL FOR EVERY PROGRAMMER
+
+To use git first download git bash.
+Open git bash for running these commands:
+To check that if git is installed porperly and for checking version of git type: 
+git --version 
+
+If you are stuck and want help you can just write, 
+git --help
+
+To clear the bash use;
+Ctrl + l 
+
+OR write
+
+clear
+
+After downloading git bash the first thing is to config your name and email by using;
+ 
+git config --global user.name "syed ibrahim zeeshan"
+
+And to add email
+
+git config --global user.email "syedibraheemzeeshan@gmail.com"
+
+And after this,
+
+git config --global color.ui auto
+
+This command enables coloring for commands in bash.
+To see even more configration commands we can use git config.
+
+
+git config -l or git config --list
+
+Prints out the configuration you have entered.
+
+Folders
+The command mkdir makes a directory in the current folder.
+If you want to delete a certain directory you can type rm -r and then the name of the directory.
+
+Repositry
+A repository in git means various versions of a project.
+ 
+Helpfull commands
+ls                 lists the file.
+cd                changes the directory.
+pwd             print the working directory.
+ls - la            prints hidden folders
+rm                used for deleting files
+cat               used to preview files
+
+To make a folder into a git repositry use,
+
+git init .
+
+The dot at the end means the working directory.
+
+After this we can issue commands like add and git commit.
+
+There will be a (master)at the end of the adress which tells that this is a git repository.
+
+The important thing is that if we want to work on an existing project we don't issue init .
+Init is mainly for brand-new projects.
+
+To make files in bash we can use touch and then the name of the file.
+
+Git
+First, we want to send the file to the staging area from there we can commit it.
+
+Commit means editing in a file or folder it is also a safe point.
+If we want that folder to become noramal again.
+do            rm -rf .git 
+It will become a normal folder again.
+
+
+To see the status of git use git status.
+Git status tells the status of the working directory and the staging area.
+
+We can add a file to the staging area by,
+add git index.html
+
+To make it unstage use,
+git rm --cached index.html
+
+We can also add everything from a folder by,
+git add .
+Here dot means that add everything from this folder to the staging area
+downwards but not the files in other folders to add them too we can use,
+git add -A
+
+git rm -r --cached .
+Here dot means to remove all files from the staging area.
+
+To issue a commit from the staging area we can use,
+git commit -m 'my_project
+
+To see the change made to commit we issued we can use, 
+git log
+and then copy the hash and type git show for more details. 
+
+Command vi is a editor used for editing files.
+To save the file we have edited using vi we can press ESC and then add a colon and then type wq.
+We can also use nano editor.
+
+To see what differences we have made to last commit we can use, 
+git diff
+This shows the difference between the working directory and the committed file.
+
+To discard the changes we can git restore index.js.
+
+
+The name should be clear if u want to change the name of the commit you can probably use, 
+git commit --amend -m "hello" 
+The m in the commit command represents a message.
+
+Git hub
+Git hub is a platform for hosting and collaborating on git repositories.
+
+The master in the brackets is the main branch's name which is made by default to see branches we can say,
+
+git branch
+
+Pushing code to git hub.
+
+First, we had to add an origin like this,
+$ git remote add origin https://github.com/SyedIbraheemZeeshan/parctice.git
+
+Git hub has recently changed and instead of the master they use main so to change it we can use,
+git branch -M main
+
+And then push the repositryin git hub like this,
+
+git push -u origin main
+
+This will fail if your account is new.
+To stop this error you need to configure your account's ssh keys.
+
+If u want to push other files from repositry you should only use git push 
+becaus we have already added the local repositry on git it knows whay todo.
+
+All the commits we added are in main branch.
+When we pushed the repositry on the git we atcullay added this main branch on git.
+Main branch is same as master branch. 
+
+A branch represnts an independent line of development.
+
+You can make many branches but then youll have to merge them to the default branch which is the main branch this is where the final code exists.
+
+Git branch only lists branches inside our local machine.
+If u want to see branches in git remote server you can type git branch -r
+
+We can also check both branches (Local machine branches and remote server branches) by git branch -a
+
+When ever we make a new branch we make a copy of the main branch. 
+By making a branch we can make all changes we want without affecting the main branch.
+
+To add brach use,
+Git branch and then the name of branch you want to make (no spaces and no special chracters excpt '-').
+After making this new branch if we make any changes it will still affect the main branch because we havent switch the branches yet, To switch branches we can say git checkout and the name of the branch.
+If u want to go to previous branch type git checkout - 
+We can also say git checkout and then the branch name
+
+To push the other branch we can use, 
+git push -u origin and the branch name
+
+We can also say git checkout -b and the name of branch
+The -b here tells the computer to make the branch and name it and then switch to it.
+
+To delete branches we can say git branch -d and the name of the branch
+
+When we are working for a company we should not push the code to the main branch instead we should make a new branch and then make a pull request so someone in the company who can review it and see that if the changes are sensible.
+
+If the branch is not merged into the main branch you need to capitlize the word -d like -D for force deletion.
+You cannot delete a branch while you are on it.
+
+To merge a branch into the main branch without a request we can simply type:
+
+git merge and the branch name
+
+You can create a pull request on git and even add rules that who should be reviwing before merging and you can even see viewers that have rewied your command.
+We can also add labels,projects,milestones on our pull request.
+
+After the discription colum there would be a button to merge automaticly but in ideal cases if you are in a company somone will need to prove your request this all can be configure in settings.
+
+After this
+Press the option beneath to delete the branch after the merge and after deleting you can even restore it.
+
+git log --oneline 
+This will make the commits you see more viewable.
+
+The log will only tell the commits that are made in the branch that youre using.
+
+If u want to delete a branch that is in the remote server too you should delete it in both remote and local machine.
+
+If you are in a company you should first pull the code in the main branch from git hub and then make a new branch and then switch to it and then do what you want.
+If your working on a feature for lets say 3 days the master will be updated by others so you have to first squash all your local commits then you should put the main commit aside and the then pull the masters updated version and the return the main commit seeing the new features of master or main.
+
+When adding a file on git you dont really need to use the quotes.
+
+If there is a conflict in your program you can probally open the file and fix it there will be the commit's hash on the file too.
+git branch --merged 
+insures that if you have merged any branches into main branch 
+
+Rebase
+If you are having conflicts use rebase. Rebase puts your branch commits to other side and then brings the master branche's commit 's and then try to excute your commits on master branch.
+
+To rebase type,
+git pull --rebase origin main
+OR
+git pull -r origin main
+
+If there is errors resolve all probliems first then run git rebase --continue
+after this a window will open so you can change the name of commit
+in rebase conflicts will come 1 by1
+then we can type git push -f
+for force
+if we want all conflicts to show togather we want to sqaush them into 1 commit by toggling the button at compare and pull request
+
+git has many gui clints but the fastest way is bash 
+git hub has a tool called git pod 
+which is a terminal and vs code in browser
+to abort mege u can say
+git merge --abort
