@@ -1,28 +1,63 @@
-API by Craig a developer 
-How the web works :
-All browsers are net clients when we open a browser and search for anything 
+API for beginners: Craig Dennis 
 
+  
 
-we send a request over the server which uses HTTPS (hyper text transfer protocol) 
+First topic the web 
 
-this request goes with a https protocol that is attached an other thing which is get get is used in request 
+  
 
-to tell this client does not want to make any changes and another thing is that https is stateless
+How the web works, 
 
- which means that no track is left when the response comes.
+  
 
-if you want to login or something the https protocol uses the post post tells the server this client will make changes next thing is the url (universal resource locater)
+All browsers are net clients. When we open a browser and search for anything we send a request from our net client over the server which uses HTTPS (hypertext transfer protocol).  
 
- the resource is a object in programming terms ever wonder what is after the question mark this is the information that you want there are other ways to get i
+This request goes with https protocol that is attached with a get request A feature of https is that it is stateless which means that no track is left after the response comes If we want to track the request and the response we can use headers every request and response comes with a header like 200, 400, 500  the request 200 means that everything is alright and the request 400 means that server has issue like it has moved or doesn't exist the 500 request means that you have created a problem for the server. One more important thing is that the response comes with a Json (Java Script on Notation) format 
 
-nformation too like headers everything that you send has headers in old days it was completly kos and no one was liked one style until the rest way of api came
+There are 5 requests that we can send with https protocol that are post, update, put, get and delete.  get is used in requests to tell the server that this client wants to read and does not want to make any changes on the server. Post is used when we want to make changes for example, if we want to login, we should probably use post. Working on the other 3. Another way to send information or request over the server is by changing the text after the question mark in the URL or URI (Universal Resource Locater or Identifier) In programming terms Resource is an object 
 
- this became so popular that after some time many api's were offerd all over the internet but the rest api has some limitaions api methods are still advancing like ther 
+  
 
-is many ways for example graphic ql api bassically abstracts many stuff for us programmers to worry about api s help to communicate with resources and itract
+Interface 
 
- with them both response and request have headers y headers u can ex[plain that what is wanted leke why you want the whole page if you have it localy just get the updated sides of 
+Interface is the outside of a device that we understand like the remote control of tv sometimes an interface gets so popular that even make in to Gui (graphical user interface). In short terms interface abstracts away the implementation for us while interface is made for the user of application the Api is made for the developer of the application for example every language has a way to interact with strings  
 
-the web this teqnice alows caching http has someting called crud 
+if you want to make all the strings uppercase run the command you can probably capitalize by doing some sort of low language calculations but you don't need to your language has provided with a handy Api for you to interact with strings Api's are so much well designed that each operating system has its own way to keep files maintain but if you write a function to execute a file it still runs on any operating system the implementation needs to worry about it the main thing is that how to leverage the Api's for your benefit 
 
-which means create read update delete which in http is get post put and delete rezt mean repasitional state tranfer and when it get tho the web it sends java script object notaion
+Api  
+
+Api's are basically a program that abstracts many of the things for us while programming for example if we take a radio, It has an interface of buttons we know how to use the volume button that is on the interface and the on/off button but i have literally no idea how is the radio doing it of course the programmer who made the radio knows that how it works but he also didn't need to code all things for example he didn't codded that what sound will come after we press the button this work is done by an Api called On Click the programmer used that Api for his program theirs another example that the same program would probably use media Api of the operating system so the developer doesn't needs to code that how the song loads into the memory so we can see that an Api is in layered system to the down at the 0 and 1s and it helps the user and even the programmer there are many Api's like rest Api and Graphical qi Api but the important thing is that all Api's from interface to 0s and 1s have one thing in common and that is they define us to interact or communicate with a resource or an object wither that object is physical or software as the user of the interface we don't need to understand how it works 
+
+We just need to know that what we have been allowed to change basically Api 's saves us from coding everything in a program. 
+
+  
+
+Rest API 
+
+  
+
+REST: Stands for repositional state transfer. 
+
+API: Stands for Application programming Interface. 
+
+  
+
+In old days no one was compatible with one style until the rest Api came everyone was comfortable with it and it soon became so popular that rest Api's were available all over the internet, Api 's style never stopped evaluating there are many more styles now but most of the company's still go with the rest Api's  
+
+  
+
+There are some limitations of a Rest Api by seeing them we can define that which Api is rest Api  
+
+  
+
+Stateless. "No Traces After the Response" 
+
+Client Server Architecture 
+
+Catchability 
+
+Layered System 
+
+Code on Demand 
+
+Uniform Interface 

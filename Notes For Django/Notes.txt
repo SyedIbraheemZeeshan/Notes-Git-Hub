@@ -1,0 +1,30 @@
+PYTHON DJANGO 
+UNIVERSITY COURSE
+NOTES
+
+Why Django?
+Django is far better than Flask and other frameworks and is very good to start as 1st module of web development and is the easiest framework to make a completely functional website with a real user interface.
+
+First Lecture
+Introduction To Dynamic Web Content:
+
+Protocols
+When you use frameworks you don't need to know what protocol does but you do need to know it when you debug your applications. There are 2 whole sets of works behind any webpage Backend and Frontend. In simple terms, a protocol is a request that you send to the web server when you click on clickable pages. It can be a get request or a post request etc. 
+When you send a request the basic thing that comes back is HTML but it's not only HTML that comes back we'll learn that later. To understand this concept deeper you can say that your webpage is an application that is running on your computer and waiting for events like clicks and when you click the application it makes a network socket on a webserver that connects with your computer and sends a language format that your computer can intercept
+
+Second Lecture
+Network Sockets:
+
+HTTP:
+The type of protocol that everybody uses is hypertext transfer protocol because it's super easy to understand and connect with. Https handles all the requests and the connection between the webpage and the webserver. You can even send headers with this to specify many things like updated parts of the page or language the page prefers. (NOTE: When you use HTTPS you have to make the first request with the server.) 
+
+URL:
+Universal locater is the way that everybody uses for locating webpages it is divided into 3 parts the first part allows multiple protocols like HTTPS the second part contains the host(domain name) and the third part contains the address of the document.
+
+Different Responses: 
+When you make a request with a server it sends responses or statuses like 200(Means Ok) or 404(Page Not Found).
+You can talk with different servers with different software like telnet (NOTE: telnet is not included in most devices nowadays because they think that it is a security hole because it does not send encrypted requests)you can say telnet data.pr4e.org 80
+because you are using HTTPS you have to make the request first and it's important to type fast or the server will probably think that this is a human that is trying to play with me and it will disconnect so you should probably paste this line GET http://data.pr4e.org/page1.htm HTTP/1.0 and then a blank line if you want no headers to be specified. After this, the server will return the status then the date and your server name, and then the content type which means what is coming next and in what format, in this case, it is text/html.
+
+Next Lecture:
+https://youtu.be/o0XbHvKxw7Y?t=1775
