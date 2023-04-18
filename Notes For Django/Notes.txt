@@ -13,7 +13,7 @@ When you use frameworks you don't need to know what protocol does but you do nee
 When you send a request the basic thing that comes back is HTML but it's not only HTML that comes back we'll learn that later. To understand this concept deeper you can say that your webpage is an application that is running on your computer and waiting for events like clicks and when you click the application it makes a network socket on a webserver that connects with your computer and sends a language format that your computer can intercept
 
 Second Lecture
-Network Sockets:
+HTTP and URL:
 
 HTTP:
 The type of protocol that everybody uses is hypertext transfer protocol because it's super easy to understand and connect with. Https handles all the requests and the connection between the webpage and the webserver. You can even send headers with this to specify many things like updated parts of the page or language the page prefers. (NOTE: When you use HTTPS you have to make the first request with the server.) 
@@ -25,6 +25,21 @@ Different Responses:
 When you make a request with a server it sends responses or statuses like 200(Means Ok) or 404(Page Not Found).
 You can talk with different servers with different software like telnet (NOTE: telnet is not included in most devices nowadays because they think that it is a security hole because it does not send encrypted requests)you can say telnet data.pr4e.org 80
 because you are using HTTPS you have to make the request first and it's important to type fast or the server will probably think that this is a human that is trying to play with me and it will disconnect so you should probably paste this line GET http://data.pr4e.org/page1.htm HTTP/1.0 and then a blank line if you want no headers to be specified. After this, the server will return the status then the date and your server name, and then the content type which means what is coming next and in what format, in this case, it is text/html.
+
+Network Sockets:
+Network sockets are like phone calls we connect, talk and dissconnect this is the basic idea behind network sockets it's importent to know who speaks first because this is a protocol. Even if you are retriving a picture your laptop is talking to another software and software sees that are you allowed to get the picture or not.
+
+Third Lecture
+Python In Web Browser:
+
+TCP Ports:
+Every computer has two adresses one is ipv4 and the second is ipv6 but te thing which is commen in both of them is that they have a tcp port number because the whole internet is aplications talking to each other so we need a nice way to talk so here tcp port numbers come in. A tcp port number is a mixture of a unique ip adress and a tcp port number when a user makes request it sends the server this mixture and if the server is willing to response it will answer it with another message on other port number then the client will confirm the connection. Differnet ports serve different pourposes like port 80 is usaully used when we connect to a web browser that is not secure and port 443 is used when we connect to a server that has https protocol.
+
+Fourth Lecture
+Simple Browser In Python:
+
+Socket Library:
+Socket library are builtin in python they are files that can be used to send data and retrive data . Socket is bascially a two step method you make a socket and it will make an end point in your computer that will recive and send data and then you will establish the connection with the server
 
 Next Lecture:
 https://youtu.be/o0XbHvKxw7Y?t=1775
